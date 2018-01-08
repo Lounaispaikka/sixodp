@@ -2,6 +2,6 @@
 localhost ansible_ssh_user=ubuntu
 
 [mainserver:vars]
-deployment_environment_id=lounaistieto-qa
-secrets_file_path="../../sixodp-secrets/lounaistieto-qa/secrets.yml"
+deployment_environment_id=data
+secrets_file_path="../../sixodp-secrets/data/secrets.yml"
 google_analytics_secrets_file_path="/root/sixodp-secrets/{{ deployment_environment_id }}/google_analytics_credentials.json"
