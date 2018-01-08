@@ -1,14 +1,14 @@
 ---
 
-public_facing_hostname: generic-qa.dataportaali.com
+public_facing_hostname: data.lounaistieto.fi
 internal_hostname: sixodp-{{ deployment_environment_id }}
 cms_site_url: localhost
 ckan_internal_host: 127.0.0.1:8080
 ckan_internal_url: "{{ 'http://' + ckan_internal_host }}"
 ckan_site_name: Dataportaali
 ckan_featured_orgs:
-automatic_updates: true
-automatic_updates_recipient: dataportaali-dev@gofore.com joonas.dukpa@tampere.fi
+automatic_updates: false
+automatic_updates_recipient: dataportaali-dev@gofore.com
 
 postgres:
   server:
@@ -36,27 +36,26 @@ mysql:
   server:
     installed_locally: false
     host: sixodp-{{ deployment_environment_id }}-wordpress.{{ rds_domain_common_part }}
-    admin_user: ckan_admin
+    admin_user: wordpress
     admin_password: "{{ secret.database_wordpress_root_password }}"
     trusted_ip_range: 127.0.0.1/32
   users:
     wordpress:
-      username: wordpress
+      username: wordpress_user
       password: "{{ secret.database_wordpress_password }}"
   databases:
     wordpress:
       name: wordpress
-      owner: wordpress
+      owner: wordpress_user
 
 
 nginx:
   use_ssl_certificate: true
   use_selfsigned_certificate: true
-  fqdn_common_part: dataportaali.com
+  fqdn_common_part: lounaistieto.fi
 
 acmetool_hostnames:
   - "{{ public_facing_hostname }}"
-  - demo.dataportaali.com
 
 solr:
   host: 127.0.0.1
@@ -117,7 +116,7 @@ ckan_extensions:
   - ckanext-statistics
   #- ckanext-sixodp_harvester
   - ckanext-sixodp_showcasesubmit
-  - ckanext-googleanalytics
+  #- ckanext-googleanalytics
 
 # List of enabled CKAN extensions in load order. Order matters, when templates call super()
 enabled_ckan_extensions:
@@ -130,7 +129,7 @@ enabled_ckan_extensions:
     - recline_grid_view
     - recline_map_view
     - sixodp_showcase
-    - googleanalytics
+    #- googleanalytics
     - qa
     - archiver
     - sixodp_ui
@@ -184,10 +183,6 @@ AWS:
   region: S3_EU_WEST
 
 recaptcha_sitekey: 6LfS9h8UAAAAACsWMtKTxlv81DWXiOAyF82xi1wZ
-
-google_analytics:
-  id: UA-98421659-1
-  account: Sixodp
 
 disqus_public_key: "{{ secret.disqus_public_key }}"
 disqus_secret_key: "{{ secret.disqus_secret_key }}"
