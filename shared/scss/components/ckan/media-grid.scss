@@ -33,12 +33,12 @@ $media-grid-item-line-height: ($card-content-height - $media-grid-item-padding *
       .media-link,
       .media-link:active,
       .media-link:focus {
-        border-color: $brand-success;
-        color: $brand-success;
+        border-color: $brand-info;
+        color: $brand-info;
 
         &:hover {
-          border-color: $brand-success-light;
-          color: $brand-success-light;
+          border-color: $brand-info-light;
+          color: $brand-info-light;
         }
       }
     }

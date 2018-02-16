@@ -85,30 +85,30 @@ $headings-small-color: $brand-primary;
 $headings-secondary-color: $brand-primary;
 $headings-extra-color: $brand-gray;
 
-$brand-app: $brand-success;
+$brand-app: $brand-primary;
 $brand-app-dark: darken($brand-app, 15%);
 
-$brand-dataset: $brand-danger;
+$brand-dataset: $brand-warning;
 $brand-dataset-dark: darken($brand-dataset, 15%);
 
 // Frontpage elements
-$main-logo-width: 200px;
+$main-logo-width: 280px;
 $hero-main-heading-color: $brand-white;
 $hero-secondary-heading-color: $brand-white;
-$hero-overlay-start: $brand-primary;
-$hero-overlay-stop: $brand-primary-extradark;
+$hero-overlay-start: $brand-white;
+$hero-overlay-stop: $brand-success-extralight;
 $hero-overlay-opacity-start: 0.0;
-$hero-overlay-opacity-center: 0.6;
-$hero-overlay-opacity-end: 0.9;
+$hero-overlay-opacity-center: 0.3;
+$hero-overlay-opacity-end: 0.6;
 $btn-main-bg: $brand-secondary;
 $btn-main-color: $brand-white;
 $btn-main-active-bg: $brand-secondary-light;
 $btn-main-active-color: $brand-white;
 
 $category-box-bg: $brand-primary;
-$category-box-icon-color: $brand-white;
-$category-box-text-color: $brand-success-light;
-$category-box-count-color: $brand-primary-extralight;
+$category-box-icon-color: $brand-lightgray;
+$category-box-text-color: $brand-white;
+$category-box-count-color: $brand-success;
 $stats-text-color: $brand-white;
 
 $accordion-bg: $brand-bg-alt;
@@ -150,7 +150,7 @@ $card-heading-rows: 3;
 
 $card-bg: $brand-lightgray;
 $card-bg-active: $brand-white;
-$card--image-bg: $brand-success-extralight;
+$card--image-bg: #C3D5E6;
 $card--image-bg-active: $brand-white;
 
 $card-text-color: $text-color;
@@ -161,7 +161,7 @@ $card-text-color--highlight-active: $brand-danger-light;
 $card-title-secondary-color: $text-muted;
 $card-border-radius: $border-radius-medium;
 $card-star-filled: $text-color;
-$card-star-empty: $brand-success-light;
+$card-star-empty: darken(#C3D5E6, 10%);
 
 // Navigation
 $navbar-default-bg: #f8f8f8;
@@ -289,9 +289,9 @@ $breadcrumb-separator: "/";
 $badge-background-color: $brand-primary;
 $badge-background-color-active: $brand-primary;
 $image-slider-background-color: $navbar-default-bg;
-$label-text-color: $brand-success;
+$label-text-color: $brand-warning;
 $label-background-color: $navbar-default-bg;
-$media-item-background-color: $brand-background;
+$media-item-background-color: $card--image-bg;
 $table-border-color: $border-color;
 $topic-list-background-color: $gray-lighter;
 
