@@ -182,7 +182,7 @@ AWS:
   ckan_s3_bucket: sixodp-{{ deployment_environment_id }}-datasets
   region: S3_EU_WEST
 
-recaptcha_sitekey: 6LfS9h8UAAAAACsWMtKTxlv81DWXiOAyF82xi1wZ
+recaptcha_sitekey: 6LfgL0sUAAAAAA5cC3iI3QTP40lZy7OqEaZ0MMxt
 
 disqus_public_key: "{{ secret.disqus_public_key }}"
 disqus_secret_key: "{{ secret.disqus_secret_key }}"
