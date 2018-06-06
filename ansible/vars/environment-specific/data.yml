@@ -116,7 +116,7 @@ ckan_extensions:
   - ckanext-statistics
   #- ckanext-sixodp_harvester
   - ckanext-sixodp_showcasesubmit
-  #- ckanext-googleanalytics
+  - ckanext-googleanalytics
 
 # List of enabled CKAN extensions in load order. Order matters, when templates call super()
 enabled_ckan_extensions:
@@ -129,7 +129,7 @@ enabled_ckan_extensions:
     - recline_grid_view
     - recline_map_view
     - sixodp_showcase
-    #- googleanalytics
+    - googleanalytics
     - qa
     - archiver
     - sixodp_ui
@@ -187,3 +187,7 @@ recaptcha_sitekey: 6LfgL0sUAAAAAA5cC3iI3QTP40lZy7OqEaZ0MMxt
 disqus_public_key: "{{ secret.disqus_public_key }}"
 disqus_secret_key: "{{ secret.disqus_secret_key }}"
 disqus_short_name: "{{ secret.disqus_short_name }}"
+
+google_analytics:
+  id: UA-68203085-4
+  account: data.lounaistieto.fi
