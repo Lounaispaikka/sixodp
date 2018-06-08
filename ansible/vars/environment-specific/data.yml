@@ -190,4 +190,4 @@ disqus_short_name: "{{ secret.disqus_short_name }}"
 
 google_analytics:
   id: UA-68203085-4
-  account: data.lounaistieto.fi
+  account: Lounaistieto
