@@ -56,7 +56,6 @@ nginx:
 
 acmetool_hostnames:
   - "{{ public_facing_hostname }}"
-  - "phppgadmin.{{ public_facing_hostname }}"
 
 solr:
   host: 127.0.0.1
