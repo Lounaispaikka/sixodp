@@ -83,11 +83,23 @@
 
 .footer-logo {
   margin-top: 0;
-  width: 100%;
+  width: 200px;
   height: auto;
-
+  margin-right: 5px;
   @media (min-width: $width-sm) {
     margin-top: $margin-large-vertical;
+  }
+
+  &.small {
+    width: 75px;
+  }
+}
+
+.footer-logo-row{
+  display: flex;
+  align-items: center;
+  @media (max-width: $width-sm) {
+    flex-direction: column;
   }
 }
 

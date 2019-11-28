@@ -29,12 +29,21 @@
 						<button type="button" class="btn btn-transparent" data-trigger="popper"><?php _e('Management', 'sixodp');?></button>
 					</div>
 				</div>
-				<div class="row footer-row">
-					<div class="col-md-2 footer-column">
+				<div class="row footer-row footer-logo-row">
+					<div class="col-md-2 col-xs-12 footer-column">
 						<div class="footer-logo-wrapper">
 							<img class="footer-logo" src="<?php echo assets_url(); ?>/images/footer_logo.png" alt="6Aika logo">
 						</div>
 					</div>
+
+                    <div class="col-md-2 col-xs-12 footer-column">
+                        <!-- Placeholder for additional city logos -->
+                        <img class="footer-logo" src="/assets/images/turku.png" alt="Logo of Turku">
+                    </div>
+                    <div class="col-md-2 col-xs-12 footer-column">
+                        <!-- Placeholder for additional city logos -->
+                        <img class="footer-logo" src="/assets/images/vsl.png" alt="Logo of Varsinaissuomen liitto">
+                    </div>
 					<div class="col-md-4 footer-column">
 						<div class="row">
 						  <div class="col-xs-12">
@@ -44,12 +53,33 @@
 						  </div>
 						</div>
 					</div>
-					<div class="col-md-6 pull-right footer-column">
-						<?php
-							get_template_part( 'partials/social_links' );
-						?>
-					</div>
 				</div>
+
+                <div class="row footer-logo-row footer-logo-row">
+                    <div class="col-md-2 col-xs-12 footer-column">
+
+                        <img class="footer-logo" src="/assets/images/turun-yliopisto.png" alt="Logo of turku university">
+
+                    </div>
+                    <div class="col-md-2 col-xs-12 footer-column">
+                        <!-- Placeholder for additional city logos -->
+                        <img class="footer-logo small" src="/assets/images/abo-akademi.png" alt="Logo of Åbo Akademi">
+                    </div>
+                    <div class="col-md-2 col-xs-12 footer-column">
+                        <!-- Placeholder for additional city logos -->
+                        <img class="footer-logo" src="/assets/images/novia.png" alt="Logo of Novia">
+                    </div>
+                    <div class="col-md-2 col-xs-12 footer-column">
+                        <!-- Placeholder for additional city logos -->
+                        <img class="footer-logo" src="/assets/images/satakuntaliitto.png" alt="Logo of satakuntaliitto">
+                    </div>
+
+                    <div class="col-md-6 pull-right footer-column">
+                        <?php
+                        get_template_part( 'partials/social_links' );
+                        ?>
+                    </div>
+                </div>
 
         <hr>
 
