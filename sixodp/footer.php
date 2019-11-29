@@ -42,6 +42,12 @@
                         <!-- Placeholder for additional city logos -->
                         <img class="footer-logo" src="/assets/images/vsl.png" alt="Logo of Varsinaissuomen liitto">
                     </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12 footer-column">
+                        <!-- Placeholder for additional city logos -->
+                    </div>
+                    <div class="col-md-2 col-sm-12 col-xs-12 footer-column">
+                        <!-- Placeholder for additional city logos -->
+                    </div>
 				</div>
 
                 <div class="row footer-logo-row footer-logo-row">
@@ -50,10 +56,7 @@
                         <img class="footer-logo" src="/assets/images/turun-yliopisto.png" alt="Logo of turku university">
 
                     </div>
-                    <div class="col-md-3 col-sm-4 col-xs-12 footer-column">
-                        <!-- Placeholder for additional city logos -->
-                        <img class="footer-logo small" src="/assets/images/abo-akademi.png" alt="Logo of Åbo Akademi">
-                    </div>
+
                     <div class="col-md-3 col-sm-4 col-xs-12 footer-column">
                         <!-- Placeholder for additional city logos -->
                         <img class="footer-logo" src="/assets/images/novia.png" alt="Logo of Novia">
@@ -63,14 +66,19 @@
                         <img class="footer-logo" src="/assets/images/satakuntaliitto.png" alt="Logo of satakuntaliitto">
                     </div>
 
-                    <div class="col-md-6 pull-right footer-column">
+                    <div class="col-md-3 col-sm-4 col-xs-12 footer-column">
+                        <!-- Placeholder for additional city logos -->
+                        <img class="footer-logo small" src="/assets/images/abo-akademi.png" alt="Logo of Åbo Akademi">
+                    </div>
+
+                    <div class="col-md-2 pull-right footer-column">
                         <?php
                         get_template_part( 'partials/social_links' );
                         ?>
                     </div>
                 </div>
 
-        <hr>
+        <hr class="footer-line">
 
 				<div class="row footer-row">
 			    <div class="col-md-12 footer-section footer-section--links">
