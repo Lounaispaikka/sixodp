@@ -98,7 +98,7 @@
 .footer-logo-row{
   display: flex;
   align-items: center;
-  @media (max-width: $width-sm) {
+  @media (max-width: $width-md) {
     flex-direction: column;
   }
 }
