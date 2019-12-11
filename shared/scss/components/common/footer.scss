@@ -57,6 +57,13 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+
+  &.footer-column-empty {
+    @media(max-width: $width-sm) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .footer-section {
@@ -100,8 +107,17 @@
   align-items: center;
   @media (max-width: $width-md) {
     flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  & + & {
+    @media (max-width: $width-md) {
+      padding-bottom: 10px;
+    }
   }
 }
+
 
 .footer-links {
   text-align: center;

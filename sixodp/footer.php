@@ -42,15 +42,15 @@
                         <!-- Placeholder for additional city logos -->
                         <img class="footer-logo" src="/assets/images/vsl.png" alt="Logo of Varsinaissuomen liitto">
                     </div>
-                    <div class="col-md-3 col-sm-4 col-xs-12 footer-column">
+                    <div class="col-md-3 col-sm-4 col-xs-12 footer-column footer-column-empty">
                         <!-- Placeholder for additional city logos -->
                     </div>
-                    <div class="col-md-2 col-sm-12 col-xs-12 footer-column">
+                    <div class="col-md-2 col-sm-12 col-xs-12 footer-column footer-column-empty">
                         <!-- Placeholder for additional city logos -->
                     </div>
 				</div>
 
-                <div class="row footer-logo-row footer-logo-row">
+                <div class="row footer-row footer-logo-row">
                     <div class="col-md-3 col-sm-4 col-xs-12 footer-column">
 
                         <img class="footer-logo" src="/assets/images/turun-yliopisto.png" alt="Logo of turku university">
