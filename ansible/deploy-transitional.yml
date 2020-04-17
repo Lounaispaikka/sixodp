@@ -21,8 +21,8 @@
     - solr6
     - redis
     - nginx
-    - role: acmetool
-      when: deployment_environment_id != "vagrant" and deployment_environment_id != "build"
+    #- role: acmetool # acmetool is broken
+    #  when: deployment_environment_id != "vagrant" and deployment_environment_id != "build"
     - apache
     - postfix
     - ckan-extensions
