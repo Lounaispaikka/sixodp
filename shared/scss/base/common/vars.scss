@@ -27,7 +27,7 @@ $darken-intensity: 20%;
 
 $brand-primary: #53718D;
 $brand-primary-light: #C1FCFE;
-$brand-primary-dark: darken($brand-primary, 10%);
+$brand-primary-dark: #2A4763;
 $brand-primary-extralight: #E7EEF5;
 $brand-primary-extradark: darken($brand-primary, 15%);
 
@@ -256,7 +256,7 @@ $datavis-color-1: $brand-primary;
 $datavis-color-2: #d0db32;
 
 // Footer
-$footer-background-color: $brand-primary;
+$footer-background-color: $brand-primary-dark;
 $footer-text-color: $brand-white;
 $footer-link-color: $brand-white;
 $footer-link-color-active: $gray-lighter;
