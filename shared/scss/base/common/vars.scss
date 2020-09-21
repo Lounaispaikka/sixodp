@@ -234,7 +234,7 @@ $navbar-offcanvas-heading-color: $brand-primary;
 
 // Filters
 $filter-bg: transparent;
-$filter-bg-active: $brand-secondary;
+$filter-bg-active: $brand-lightgray;
 $filter-color: $brand-gray;
 $filter-color-active: $brand-white;
 $filter-bg-hover: $gray-lighter;
@@ -278,7 +278,7 @@ $stages-text-color-active: $brand-white;
 $stages-text-color-filled: $brand-white;
 
 // Sidebar (CMS only)
-$sidebar-heading-color: $gray-light;
+$sidebar-heading-color: $brand-primary;
 $sidebar-item-bg: $brand-white;
 $sidebar-item-bg--highlight: $gray-lighter;
 $sidebar-item-bg-active: $brand-secondary;
