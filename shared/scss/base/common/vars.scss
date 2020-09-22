@@ -100,8 +100,8 @@ $brand-latest-dark: darken($brand-latest, 15%);
 $main-logo-width: 260px;
 $hero-main-heading-color: $brand-white;
 $hero-secondary-heading-color: $brand-white;
-$hero-overlay-start: $brand-info;
-$hero-overlay-stop: $brand-info;
+$hero-overlay-start: $brand-info-extradark;
+$hero-overlay-stop: $brand-info-extradark;
 $hero-overlay-opacity-start: 0.2;
 $hero-overlay-opacity-center: 0.3;
 $hero-overlay-opacity-end: 0.5;
@@ -234,7 +234,7 @@ $navbar-offcanvas-heading-color: $brand-primary;
 
 // Filters
 $filter-bg: transparent;
-$filter-bg-active: $brand-lightgray;
+$filter-bg-active: $brand-primary;
 $filter-color: $brand-gray;
 $filter-color-active: $brand-white;
 $filter-bg-hover: $gray-lighter;
@@ -281,8 +281,8 @@ $stages-text-color-filled: $brand-white;
 $sidebar-heading-color: $brand-primary;
 $sidebar-item-bg: $brand-white;
 $sidebar-item-bg--highlight: $gray-lighter;
-$sidebar-item-bg-active: $brand-secondary;
-$sidebar-item-bg-active--highlight: $brand-secondary;
+$sidebar-item-bg-active: $brand-primary;
+$sidebar-item-bg-active--highlight: $brand-primary-light;
 
 $sidebar-item-color: $navbar-default-link-color;
 $sidebar-item-color--highlight: $text-color;
